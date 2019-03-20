@@ -1,0 +1,10 @@
+<h2>TIMELINE</h2>
+
+<div *ngIf="timelineService.publications.length">
+
+  <h2>Timeline</h2>
+  <button class="clear"
+          (click)="timelineService.clear()">clear</button>
+  <div *ngFor='let publication of timelineService.publications'> {{publication}} </div>
+
+</div> 
